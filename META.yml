@@ -18,7 +18,8 @@ name: Convert-Z85
 requires:
   Carp: 0
   Exporter::Tiny: 0
+  parent: 0
   strictures: 1
 resources:
   repository: git://github.com/avenj/convert-z85.git
-version: 0.001001
+version: 0.001002

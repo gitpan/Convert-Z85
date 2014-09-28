@@ -33,6 +33,7 @@
          "requires" : {
             "Carp" : "0",
             "Exporter::Tiny" : "0",
+            "parent" : "0",
             "strictures" : "1"
          }
       },
@@ -55,6 +56,6 @@
          "web" : "http://github.com/avenj/convert-z85"
       }
    },
-   "version" : "0.001001"
+   "version" : "0.001002"
 }
 

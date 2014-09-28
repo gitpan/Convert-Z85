@@ -4,7 +4,7 @@ NAME
 SYNOPSIS
       use Convert::Z85;
 
-      my $encoded = encode_z85($data);
+      my $encoded = encode_z85($binarydata);
       my $decoded = decode_z85($encoded);
 
 DESCRIPTION
@@ -15,7 +15,8 @@ DESCRIPTION
     Modelled on the PyZMQ <http://zeromq.github.io/pyzmq/> implementation.
 
     This module uses Exporter::Tiny to export two functions by default:
-    "encode_z85" and "decode_z85".
+    "encode_z85" and "decode_z85". Exporter::Tiny provides flexible import
+    options; look there for details.
 
   encode_z85
       encode_z85($data);
@@ -23,13 +24,21 @@ DESCRIPTION
     Takes binary data (in 4-byte chunks padded with trailing zero bytes if
     necessary) and returns a Z85-encoded text string.
 
+    Padding is left up to the application, per the spec.
+
   decode_z85
       decode_z85($encoded);
 
     Takes a Z85 text string and returns the original binary data.
 
+    Throws a stack trace if invalid data is encountered.
+
 SEE ALSO
     Convert::Ascii85
+
+    POEx::ZMQ
+
+    ZMQ::FFI
 
 AUTHOR
     Jon Portnoy <avenj@cobaltirc.org>
