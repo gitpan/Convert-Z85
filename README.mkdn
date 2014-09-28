@@ -1,0 +1,42 @@
+# NAME
+
+Convert::Z85 - Encode and decode Z85 strings
+
+# SYNOPSIS
+
+    use Convert::Z85;
+
+    my $encoded = encode_z85($data);
+    my $decoded = decode_z85($encoded);
+
+# DESCRIPTION
+
+An implementation of the _Z85_ encoding scheme (as described in
+[ZeroMQ spec 32](http://rfc.zeromq.org/spec:32)) for encoding binary data as
+plain text.
+
+Modelled on the [PyZMQ](http://zeromq.github.io/pyzmq/) implementation.
+
+This module uses [Exporter::Tiny](https://metacpan.org/pod/Exporter::Tiny) to export two functions by default:
+["encode\_z85"](#encode_z85) and ["decode\_z85"](#decode_z85).
+
+## encode\_z85
+
+    encode_z85($data);
+
+Takes binary data (in 4-byte chunks padded with trailing zero bytes if
+necessary) and returns a Z85-encoded text string.
+
+## decode\_z85
+
+    decode_z85($encoded);
+
+Takes a Z85 text string and returns the original binary data.
+
+# SEE ALSO
+
+[Convert::Ascii85](https://metacpan.org/pod/Convert::Ascii85)
+
+# AUTHOR
+
+Jon Portnoy <avenj@cobaltirc.org>
