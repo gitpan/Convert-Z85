@@ -1,7 +1,7 @@
 package Convert::Z85;
-$Convert::Z85::VERSION = '0.002001';
+$Convert::Z85::VERSION = '0.003001';
 use Carp;
-use strictures 1;
+use strict; use warnings FATAL => 'all';
 
 use parent 'Exporter::Tiny';
 our @EXPORT = our @EXPORT_OK = qw/

@@ -4,7 +4,7 @@
       "Jon Portnoy <avenj@cobaltirc.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -31,10 +31,9 @@
       },
       "runtime" : {
          "requires" : {
-            "Carp" : "0",
             "Exporter::Tiny" : "0",
             "parent" : "0",
-            "strictures" : "1"
+            "perl" : "5.008"
          }
       },
       "test" : {
@@ -42,9 +41,10 @@
             "CPAN::Meta" : "2.120900"
          },
          "requires" : {
+            "Capture::Tiny" : "0",
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
-            "Test::More" : "0.96"
+            "Test::More" : "0.88"
          }
       }
    },
@@ -56,6 +56,6 @@
          "web" : "http://github.com/avenj/convert-z85"
       }
    },
-   "version" : "0.002001"
+   "version" : "0.003001"
 }
 

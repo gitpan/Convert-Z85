@@ -15,11 +15,13 @@ use Test::More 0.88;
 use Test::NoTabs;
 
 my @files = (
+    'bin/z85_convert',
     'lib/Convert/Z85.pm',
     't/00-report-prereqs.dd',
     't/00-report-prereqs.t',
     't/author-no-tabs.t',
     't/basic.t',
+    't/cmd.t',
     't/release-cpan-changes.t',
     't/release-dist-manifest.t',
     't/release-pod-coverage.t',
