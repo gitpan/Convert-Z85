@@ -1,5 +1,5 @@
 package Convert::Z85;
-$Convert::Z85::VERSION = '0.003003';
+$Convert::Z85::VERSION = '0.004001';
 use Carp;
 use strict; use warnings FATAL => 'all';
 
