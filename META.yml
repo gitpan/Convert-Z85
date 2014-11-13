@@ -22,4 +22,4 @@ requires:
   perl: 5.008
 resources:
   repository: git://github.com/avenj/convert-z85.git
-version: 0.003002
+version: 0.003003
